@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo degradê amarelo e preto: vai da esquerda para a direita */
+    background: linear-gradient(to right, #ffeb3b, #000000); 
+    color: #fff; /* Cor do texto principal */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Um fundo levemente transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffeb3b; /* Amarelo para o título */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ocupa quase toda a largura, menos o padding */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente dos inputs */
+    color: #fff;
+    outline: none; /* Remove o contorno ao clicar */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background-color: #ffeb3b; /* Botão amarelo */
+    color: #000; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+button:hover {
+    background-color: #fdd835; /* Amarelo um pouco mais escuro ao passar o mouse */
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.message.success {
+    color: #4CAF50; /* Verde para mensagens de sucesso */
+}
+
+.message.error {
+    color: #f44336; /* Vermelho para mensagens de erro */
+}
